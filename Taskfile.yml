@@ -1,0 +1,8 @@
+version: "3"
+
+silent: true
+
+tasks:
+  caddy-build:
+    cmds:
+      - docker build --file ./caddy-augmented.Dockerfile --tag caddy-augmented:latest .
